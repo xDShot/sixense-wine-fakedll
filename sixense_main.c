@@ -61,12 +61,11 @@ double __cdecl SIXENSE_sixenseUtils_getTimeInMilliseconds_2(void)
  *
  *
  */
-#if 0
-__cdecl SIXENSE_CreateInterface()
+int __cdecl SIXENSE_CreateInterface()
 {
-	/* @stub in .spec */
+	FIXME(":stub\n");
+	return sixenseInit();
 }
-#endif
 /******************************************************************
  *		sixenseAutoEnableHemisphereTracking (SIXENSE.4)
  *
@@ -74,7 +73,6 @@ __cdecl SIXENSE_CreateInterface()
  */
 int __cdecl SIXENSE_sixenseAutoEnableHemisphereTracking(int which_controller)
 {
-	/*FIXME(":stub\n");*/
 	return sixenseAutoEnableHemisphereTracking(which_controller);
 }
 /******************************************************************
@@ -84,7 +82,6 @@ int __cdecl SIXENSE_sixenseAutoEnableHemisphereTracking(int which_controller)
  */
 int __cdecl SIXENSE_sixenseExit(void)
 {
-	/*FIXME(":stub\n");*/
 	return sixenseExit();
 }
 /******************************************************************
@@ -94,7 +91,6 @@ int __cdecl SIXENSE_sixenseExit(void)
  */
 int __cdecl SIXENSE_sixenseGetAllData(int index_back, sixenseAllControllerData * arg1)
 {
-	/*FIXME(":stub\n");*/
 	return sixenseGetAllData(index_back, arg1);
 }
 /******************************************************************
@@ -104,7 +100,6 @@ int __cdecl SIXENSE_sixenseGetAllData(int index_back, sixenseAllControllerData *
  */
 int __cdecl SIXENSE_sixenseGetAllNewestData(sixenseAllControllerData * arg0)
 {
-	/*FIXME(":stub\n");*/
 	return sixenseGetAllNewestData(arg0);
 }
 /******************************************************************
@@ -114,7 +109,6 @@ int __cdecl SIXENSE_sixenseGetAllNewestData(sixenseAllControllerData * arg0)
  */
 int __cdecl SIXENSE_sixenseGetBaseColor(unsigned char * red, unsigned char * green, unsigned char * blue)
 {
-	/*FIXME(":stub\n");*/
 	return sixenseGetBaseColor(red, green, blue);
 }
 /******************************************************************
@@ -122,12 +116,11 @@ int __cdecl SIXENSE_sixenseGetBaseColor(unsigned char * red, unsigned char * gre
  *
  *
  */
-#if 0
-__cdecl SIXENSE_sixenseGetCalibrationEnabled()
+int __cdecl SIXENSE_sixenseGetCalibrationEnabled()
 {
-	/* @stub in .spec */
+	FIXME(":stub\n");
+	return 1;
 }
-#endif
 /******************************************************************
  *		sixenseGetData (SIXENSE.10)
  *
@@ -135,7 +128,6 @@ __cdecl SIXENSE_sixenseGetCalibrationEnabled()
  */
 int __cdecl SIXENSE_sixenseGetData(int which, int index_back, sixenseControllerData * arg2)
 {
-	/*FIXME(":stub\n");*/
 	return sixenseGetData(which, index_back, arg2);
 }
 /******************************************************************
@@ -143,12 +135,11 @@ int __cdecl SIXENSE_sixenseGetData(int which, int index_back, sixenseControllerD
  *
  *
  */
-#if 0
-__cdecl SIXENSE_sixenseGetDebugParam()
+int __cdecl SIXENSE_sixenseGetDebugParam(const char *param_name, float *val)
 {
-	/* @stub in .spec */
+	FIXME(":stub\n");
+	return 1;
 }
-#endif
 /******************************************************************
  *		sixenseGetFilterEnabled (SIXENSE.12)
  *
@@ -156,7 +147,6 @@ __cdecl SIXENSE_sixenseGetDebugParam()
  */
 int __cdecl SIXENSE_sixenseGetFilterEnabled(int * on_or_off)
 {
-	/*FIXME(":stub\n");*/
 	return sixenseGetFilterEnabled(on_or_off);
 }
 /******************************************************************
@@ -166,7 +156,6 @@ int __cdecl SIXENSE_sixenseGetFilterEnabled(int * on_or_off)
  */
 int __cdecl SIXENSE_sixenseGetFilterParams(float * near_range, float * near_val, float * far_range, float * far_val)
 {
-	/*FIXME(":stub\n");*/
 	return sixenseGetFilterParams(near_range, near_val, far_range, far_val);
 }
 /******************************************************************
@@ -176,7 +165,6 @@ int __cdecl SIXENSE_sixenseGetFilterParams(float * near_range, float * near_val,
  */
 int __cdecl SIXENSE_sixenseGetHemisphereTrackingMode(int which_controller, int * state)
 {
-	/*FIXME(":stub\n");*/
 	return sixenseGetHemisphereTrackingMode(which_controller, state);
 }
 /******************************************************************
@@ -184,12 +172,11 @@ int __cdecl SIXENSE_sixenseGetHemisphereTrackingMode(int which_controller, int *
  *
  *
  */
-#if 0
-__cdecl SIXENSE_sixenseGetHemisphereVector()
+int __cdecl SIXENSE_sixenseGetHemisphereVector()
 {
-	/* @stub in .spec */
+	FIXME(":stub\n");
+	return 1;
 }
-#endif
 /******************************************************************
  *		sixenseGetHighPriorityBindingEnabled (SIXENSE.16)
  *
@@ -197,7 +184,6 @@ __cdecl SIXENSE_sixenseGetHemisphereVector()
  */
 int __cdecl SIXENSE_sixenseGetHighPriorityBindingEnabled(int * on_or_off)
 {
-	/*FIXME(":stub\n");*/
 	return sixenseGetHighPriorityBindingEnabled(on_or_off);
 }
 /******************************************************************
@@ -207,7 +193,6 @@ int __cdecl SIXENSE_sixenseGetHighPriorityBindingEnabled(int * on_or_off)
  */
 int __cdecl SIXENSE_sixenseGetHistorySize(void)
 {
-	/*FIXME(":stub\n");*/
 	return sixenseGetHistorySize();
 }
 /******************************************************************
@@ -217,7 +202,6 @@ int __cdecl SIXENSE_sixenseGetHistorySize(void)
  */
 int __cdecl SIXENSE_sixenseGetMaxBases(void)
 {
-	/*FIXME(":stub\n");*/
 	return sixenseGetMaxBases();
 }
 /******************************************************************
@@ -227,7 +211,6 @@ int __cdecl SIXENSE_sixenseGetMaxBases(void)
  */
 int __cdecl SIXENSE_sixenseGetMaxControllers(void)
 {
-	/*FIXME(":stub\n");*/
 	return sixenseGetMaxControllers();
 }
 /******************************************************************
@@ -237,7 +220,6 @@ int __cdecl SIXENSE_sixenseGetMaxControllers(void)
  */
 int __cdecl SIXENSE_sixenseGetNewestData(int which, sixenseControllerData * arg1)
 {
-	/*FIXME(":stub\n");*/
 	return sixenseGetNewestData(which, arg1);
 }
 /******************************************************************
@@ -247,7 +229,6 @@ int __cdecl SIXENSE_sixenseGetNewestData(int which, sixenseControllerData * arg1
  */
 int __cdecl SIXENSE_sixenseGetNumActiveControllers(void)
 {
-	/*FIXME(":stub\n");*/
 	return sixenseGetNumActiveControllers();
 }
 /******************************************************************
@@ -255,56 +236,51 @@ int __cdecl SIXENSE_sixenseGetNumActiveControllers(void)
  *
  *
  */
-#if 0
-__cdecl SIXENSE_sixenseGetRawData()
+int __cdecl SIXENSE_sixenseGetRawData()
 {
-	/* @stub in .spec */
+	FIXME(":stub\n");
+	return 1;
 }
-#endif
 /******************************************************************
  *		sixenseGetRawDataSingle (SIXENSE.23)
  *
  *
  */
-#if 0
-__cdecl SIXENSE_sixenseGetRawDataSingle()
+int __cdecl SIXENSE_sixenseGetRawDataSingle()
 {
-	/* @stub in .spec */
+	FIXME(":stub\n");
+	return 1;
 }
-#endif
 /******************************************************************
  *		sixenseGetSignalMatrix (SIXENSE.24)
  *
  *
  */
-#if 0
-__cdecl SIXENSE_sixenseGetSignalMatrix()
+int __cdecl SIXENSE_sixenseGetSignalMatrix()
 {
-	/* @stub in .spec */
+	FIXME(":stub\n");
+	return 1;
 }
-#endif
 /******************************************************************
  *		sixenseGetSignalQuality (SIXENSE.25)
  *
  *
  */
-#if 0
-__cdecl SIXENSE_sixenseGetSignalQuality()
+int __cdecl SIXENSE_sixenseGetSignalQuality()
 {
-	/* @stub in .spec */
+	FIXME(":stub\n");
+	return 1;
 }
-#endif
 /******************************************************************
  *		sixenseGetTestMode (SIXENSE.26)
  *
  *
  */
-#if 0
-__cdecl SIXENSE_sixenseGetTestMode()
+int __cdecl SIXENSE_sixenseGetTestMode()
 {
-	/* @stub in .spec */
+	FIXME(":stub\n");
+	return 1;
 }
-#endif
 /******************************************************************
  *		sixenseInit (SIXENSE.27)
  *
@@ -312,7 +288,6 @@ __cdecl SIXENSE_sixenseGetTestMode()
  */
 int __cdecl SIXENSE_sixenseInit(void)
 {
-	/*FIXME(":stub\n");*/
 	return sixenseInit();
 }
 /******************************************************************
@@ -322,7 +297,6 @@ int __cdecl SIXENSE_sixenseInit(void)
  */
 int __cdecl SIXENSE_sixenseIsBaseConnected(int i)
 {
-	/*FIXME(":stub\n");*/
 	return sixenseIsBaseConnected(i);
 }
 /******************************************************************
@@ -332,7 +306,6 @@ int __cdecl SIXENSE_sixenseIsBaseConnected(int i)
  */
 int __cdecl SIXENSE_sixenseIsControllerEnabled(int which)
 {
-	/*FIXME(":stub\n");*/
 	return sixenseIsControllerEnabled(which);
 }
 /******************************************************************
@@ -340,23 +313,21 @@ int __cdecl SIXENSE_sixenseIsControllerEnabled(int which)
  *
  *
  */
-#if 0
-__cdecl SIXENSE_sixensePlaybackLogFile()
+int __cdecl SIXENSE_sixensePlaybackLogFile()
 {
-	/* @stub in .spec */
+	FIXME(":stub\n");
+	return 1;
 }
-#endif
 /******************************************************************
  *		sixenseSendTestCommand (SIXENSE.31)
  *
  *
  */
-#if 0
-__cdecl SIXENSE_sixenseSendTestCommand()
+int __cdecl SIXENSE_sixenseSendTestCommand()
 {
-	/* @stub in .spec */
+	FIXME(":stub\n");
+	return 1;
 }
-#endif
 /******************************************************************
  *		sixenseSetActiveBase (SIXENSE.32)
  *
@@ -364,7 +335,6 @@ __cdecl SIXENSE_sixenseSendTestCommand()
  */
 int __cdecl SIXENSE_sixenseSetActiveBase(int i)
 {
-	/*FIXME(":stub\n");*/
 	return sixenseSetActiveBase(i);
 }
 /******************************************************************
@@ -374,7 +344,6 @@ int __cdecl SIXENSE_sixenseSetActiveBase(int i)
  */
 int __cdecl SIXENSE_sixenseSetBaseColor(unsigned char red, unsigned char green, unsigned char blue)
 {
-	/*FIXME(":stub\n");*/
 	return sixenseSetBaseColor(red, green, blue);
 }
 /******************************************************************
@@ -382,23 +351,21 @@ int __cdecl SIXENSE_sixenseSetBaseColor(unsigned char red, unsigned char green, 
  *
  *
  */
-#if 0
-__cdecl SIXENSE_sixenseSetCalibrationEnabled()
+int __cdecl SIXENSE_sixenseSetCalibrationEnabled()
 {
-	/* @stub in .spec */
+	FIXME(":stub\n");
+	return 1;
 }
-#endif
 /******************************************************************
  *		sixenseSetDebugParam (SIXENSE.35)
  *
  *
  */
-#if 0
-__cdecl SIXENSE_sixenseSetDebugParam()
+int SIXENSE_sixenseSetDebugParam(const char *param_name, float val)
 {
-	/* @stub in .spec */
+	FIXME(":stub\n");
+	return 1;
 }
-#endif
 /******************************************************************
  *		sixenseSetFilterEnabled (SIXENSE.36)
  *
@@ -406,7 +373,6 @@ __cdecl SIXENSE_sixenseSetDebugParam()
  */
 int __cdecl SIXENSE_sixenseSetFilterEnabled(int on_or_off)
 {
-	/*FIXME(":stub\n");*/
 	return sixenseSetFilterEnabled(on_or_off);
 }
 /******************************************************************
@@ -416,7 +382,6 @@ int __cdecl SIXENSE_sixenseSetFilterEnabled(int on_or_off)
  */
 int __cdecl SIXENSE_sixenseSetFilterParams(float near_range, float near_val, float far_range, float far_val)
 {
-	/*FIXME(":stub\n");*/
 	return sixenseSetFilterParams(near_range, near_val, far_range, far_val);
 }
 /******************************************************************
@@ -426,7 +391,6 @@ int __cdecl SIXENSE_sixenseSetFilterParams(float near_range, float near_val, flo
  */
 int __cdecl SIXENSE_sixenseSetHemisphereTrackingMode(int which_controller, int state)
 {
-	/*FIXME(":stub\n");*/
 	return sixenseSetHemisphereTrackingMode(which_controller, state);
 }
 /******************************************************************
@@ -434,12 +398,11 @@ int __cdecl SIXENSE_sixenseSetHemisphereTrackingMode(int which_controller, int s
  *
  *
  */
-#if 0
-__cdecl SIXENSE_sixenseSetHemisphereVector()
+int __cdecl SIXENSE_sixenseSetHemisphereVector()
 {
-	/* @stub in .spec */
+	FIXME(":stub\n");
+	return 1;
 }
-#endif
 /******************************************************************
  *		sixenseSetHighPriorityBindingEnabled (SIXENSE.40)
  *
@@ -447,7 +410,6 @@ __cdecl SIXENSE_sixenseSetHemisphereVector()
  */
 int __cdecl SIXENSE_sixenseSetHighPriorityBindingEnabled(int on_or_off)
 {
-	/*FIXME(":stub\n");*/
 	return sixenseSetHighPriorityBindingEnabled(on_or_off);
 }
 /******************************************************************
@@ -455,12 +417,11 @@ int __cdecl SIXENSE_sixenseSetHighPriorityBindingEnabled(int on_or_off)
  *
  *
  */
-#if 0
-__cdecl SIXENSE_sixenseSetTestMode()
+int __cdecl SIXENSE_sixenseSetTestMode()
 {
-	/* @stub in .spec */
+	FIXME(":stub\n");
+	return 1;
 }
-#endif
 /******************************************************************
  *		sixenseTriggerVibration (SIXENSE.42)
  *
@@ -468,6 +429,5 @@ __cdecl SIXENSE_sixenseSetTestMode()
  */
 int __cdecl SIXENSE_sixenseTriggerVibration(int controller_id, int duration_100ms, int pattern_id)
 {
-	/*FIXME(":stub\n");*/
 	return sixenseTriggerVibration( controller_id, duration_100ms, pattern_id );
 }
